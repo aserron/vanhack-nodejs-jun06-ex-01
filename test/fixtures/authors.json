@@ -1,0 +1,304 @@
+{
+  "data": [
+    {
+      "name": "Albert Einstein",
+      "biography": "In 1879, Albert Einstein was born in Ulm, Germany.",
+      "birthdate": "March 14, 1879",
+      "location": "in Ulm, Germany"
+    },
+    {
+      "name": "J.K. Rowling",
+      "biography": "See also: Robert GalbraithAlthough she writes unde",
+      "birthdate": "July 31, 1965",
+      "location": "in Yate, South Gloucestershire, England, The United Kingdom"
+    },
+    {
+      "name": "Jane Austen",
+      "biography": "Jane Austen was an English novelist whose works of",
+      "birthdate": "December 16, 1775",
+      "location": "in Steventon Rectory, Hampshire, The United Kingdom"
+    },
+    {
+      "name": "Marilyn Monroe",
+      "biography": "Marilyn Monroe (born Norma Jeane Mortenson; June 1",
+      "birthdate": "June 01, 1926",
+      "location": "in The United States"
+    },
+    {
+      "name": "André Gide",
+      "biography": "André Paul Guillaume Gide was a French author and ",
+      "birthdate": "November 22, 1869",
+      "location": "in Paris, France"
+    },
+    {
+      "name": "Thomas A. Edison",
+      "biography": "Thomas Alva Edison was an American inventor, scien",
+      "birthdate": "February 11, 1847",
+      "location": "in Milan, Ohio, The United States"
+    },
+    {
+      "name": "Eleanor Roosevelt",
+      "biography": "Anna Eleanor Roosevelt was an American political l",
+      "birthdate": "October 11, 1884",
+      "location": "in The United States"
+    },
+    {
+      "name": "Steve Martin",
+      "biography": "Stephen Glenn \"Steve\" Martin is an American actor,",
+      "birthdate": "August 14, 1945",
+      "location": "in Waco, Texas, The United States"
+    },
+    {
+      "name": "Bob Marley",
+      "biography": "Robert \"Bob\" Nesta Marley OM was a Jamaican singer",
+      "birthdate": "February 06, 1945",
+      "location": "in Nine Mile, Saint Ann, Jamaica"
+    },
+    {
+      "name": "Dr. Seuss",
+      "biography": "Theodor Seuss Geisel was born 2 March 1904 in Spri",
+      "birthdate": "March 02, 1904",
+      "location": "in Springfield, MA, The United States"
+    },
+    {
+      "name": "Douglas Adams",
+      "biography": "Douglas Noël Adams was an English author, comic ra",
+      "birthdate": "March 11, 1952",
+      "location": "in Cambridge, England, The United Kingdom"
+    },
+    {
+      "name": "Elie Wiesel",
+      "biography": "Eliezer Wiesel was a Romania-born American novelis",
+      "birthdate": "September 30, 1928",
+      "location": "in Sighet, Romania"
+    },
+    {
+      "name": "Friedrich Nietzsche",
+      "biography": "Friedrich Wilhelm Nietzsche (1844–1900) is a Germa",
+      "birthdate": "October 15, 1844",
+      "location": "in Röcken bei Lützen, Prussian Province of Saxony, Germany"
+    },
+    {
+      "name": "Mark Twain",
+      "biography": "Samuel Langhorne Clemens, better known by his pen ",
+      "birthdate": "November 30, 1835",
+      "location": "in Florida, Missouri, The United States"
+    },
+    {
+      "name": "Allen Saunders",
+      "biography": "Allen Saunders was an American writer, journalist ",
+      "birthdate": "April 24, 1899",
+      "location": "in The United States"
+    },
+    {
+      "name": "Pablo Neruda",
+      "biography": "Pablo Neruda was the pen name and, later, legal na",
+      "birthdate": "July 12, 1904",
+      "location": "in Parral, Chile"
+    },
+    {
+      "name": "Ralph Waldo Emerson",
+      "biography": "in 1803, Ralph Waldo Emerson was born in Boston. E",
+      "birthdate": "May 25, 1803",
+      "location": "in Boston, Massachusetts, The United States"
+    },
+    {
+      "name": "Mother Teresa",
+      "biography": "Blessed Teresa of Calcutta, or Mother Teresa, born",
+      "birthdate": "August 26, 1910",
+      "location": "in Skopje, Macedonia, the Former Yugoslav Republic of"
+    },
+    {
+      "name": "Garrison Keillor",
+      "biography": "Garrison Keillor (born Gary Edward Keillor on Augu",
+      "birthdate": "August 07, 1942",
+      "location": "in Anoka, Minnesota, The United States"
+    },
+    {
+      "name": "Jim Henson",
+      "biography": "James Maury \"Jim\" Henson was the most widely known",
+      "birthdate": "September 24, 1936",
+      "location": "in Greenville, Mississippi, The United States"
+    },
+    {
+      "name": "Charles M. Schulz",
+      "biography": "Charles Monroe Schulz was an American cartoonist, ",
+      "birthdate": "November 26, 1922",
+      "location": "in Minneapolis, MN, The United States"
+    },
+    {
+      "name": "William Nicholson",
+      "biography": "Librarian Note: There is more than one author in t",
+      "birthdate": "January 12, 1948",
+      "location": "in Lewes, Sussex, The United Kingdom"
+    },
+    {
+      "name": "Jorge Luis Borges",
+      "biography": "Jorge Francisco Isidoro Luis Borges Acevedo (Spani",
+      "birthdate": "August 24, 1899",
+      "location": "in Buenos Aires, Argentina"
+    },
+    {
+      "name": "George Eliot",
+      "biography": "In 1819, novelist George Eliot (nee Mary Ann Evans",
+      "birthdate": "November 22, 1819",
+      "location": "in South Farm, Arbury Hall, Nuneaton, Warwickshire, The United Kingdom"
+    },
+    {
+      "name": "George R.R. Martin",
+      "biography": "George R. R. Martin was born September 20, 1948, i",
+      "birthdate": "September 20, 1948",
+      "location": "in Bayonne, New Jersey, The United States"
+    },
+    {
+      "name": "C.S. Lewis",
+      "biography": "CLIVE STAPLES LEWIS (1898–1963) was one of the int",
+      "birthdate": "November 29, 1898",
+      "location": "in Belfast, Ireland"
+    },
+    {
+      "name": "Martin Luther King Jr.",
+      "biography": "Martin Luther King, Jr. was one of the pivotal lea",
+      "birthdate": "January 15, 1929",
+      "location": "in Atlanta, Georgia, The United States"
+    },
+    {
+      "name": "James Baldwin",
+      "biography": "Librarian Note: There is more than one author in t",
+      "birthdate": "August 02, 1924",
+      "location": "in Harlem, New York, The United States"
+    },
+    {
+      "name": "Haruki Murakami",
+      "biography": "Haruki Murakami (Japanese: 村上 春樹) is a popular con",
+      "birthdate": "January 12, 1949",
+      "location": "in Kyoto, Japan"
+    },
+    {
+      "name": "Alexandre Dumas-fils",
+      "biography": "Alexandre Dumas (son) was born in Paris, France, t",
+      "birthdate": "July 27, 1824",
+      "location": "in Paris, France"
+    },
+    {
+      "name": "Stephenie Meyer",
+      "biography": "I was born in Connecticut in 1973, during a brief ",
+      "birthdate": "December 24, 1973",
+      "location": "in Connecticut, The United States"
+    },
+    {
+      "name": "Ernest Hemingway",
+      "biography": "Ernest Miller Hemingway was an American author and",
+      "birthdate": "July 21, 1899",
+      "location": "in Oak Park, Illinois, The United States"
+    },
+    {
+      "name": "Helen Keller",
+      "biography": "Helen Keller would not be bound by conditions. Ren",
+      "birthdate": "June 27, 1880",
+      "location": "in Tuscumbia, Alabama, The United States"
+    },
+    {
+      "name": "George Bernard Shaw",
+      "biography": "George Bernard Shaw was an Irish playwright, socia",
+      "birthdate": "July 26, 1856",
+      "location": "in Dublin, Ireland"
+    },
+    {
+      "name": "Charles Bukowski",
+      "biography": "Henry Charles Bukowski (born as Heinrich Karl Buko",
+      "birthdate": "August 16, 1920",
+      "location": "in Andernach, Germany"
+    },
+    {
+      "name": "Suzanne Collins",
+      "biography": "Librarian Note: There is more than one author in t",
+      "birthdate": "August 11, 1962",
+      "location": "in Hartford, Connecticut, The United States"
+    },
+    {
+      "name": "J.R.R. Tolkien",
+      "biography": "John Ronald Reuel Tolkien, CBE, was an English wri",
+      "birthdate": "January 03, 1892",
+      "location": "in Bloemfontein, Mangaung, Free State, South Africa"
+    },
+    {
+      "name": "Alfred Tennyson",
+      "biography": "Alfred Tennyson was born in Somersby, Lincolnshire",
+      "birthdate": "August 06, 1809",
+      "location": "in Somersby, Lincolnshire, The United Kingdom"
+    },
+    {
+      "name": "Terry Pratchett",
+      "biography": "Sir Terry Pratchett sold his first story when he w",
+      "birthdate": "April 28, 1948",
+      "location": "in Beaconsfield, Buckinghamshire, England, The United Kingdom"
+    },
+    {
+      "name": "J.D. Salinger",
+      "biography": "Jerome David Salinger was an American author, best",
+      "birthdate": "January 01, 1919",
+      "location": "in Manhattan, New York, The United States"
+    },
+    {
+      "name": "George Carlin",
+      "biography": "George Denis Patrick Carlin was a Grammy-winning A",
+      "birthdate": "May 12, 1937",
+      "location": "in New York, New York, The United States"
+    },
+    {
+      "name": "John Lennon",
+      "biography": "John Winston Ono Lennon, MBE, was an English singe",
+      "birthdate": "October 09, 1940",
+      "location": "in Liverpool, England, The United Kingdom"
+    },
+    {
+      "name": "W.C. Fields",
+      "biography": "W. C. Fields was born William Claude Dukenfield, t",
+      "birthdate": "January 29, 1880",
+      "location": "in Darby, Pennsylvania, The United States"
+    },
+    {
+      "name": "Ayn Rand",
+      "biography": "Alisa Rosenbaum was born in pre-revolutionary St. ",
+      "birthdate": "February 02, 1905",
+      "location": "in St. Petersburg, Russian Federation"
+    },
+    {
+      "name": "Jimi Hendrix",
+      "biography": "Jimi Hendrix was an American guitarist, singer and",
+      "birthdate": "November 27, 1942",
+      "location": "in Seattle, Washington, The United States"
+    },
+    {
+      "name": "J.M. Barrie",
+      "biography": "Sir James Matthew Barrie, 1st Baronet, OM (9 May 1",
+      "birthdate": "May 09, 1860",
+      "location": "in Kirriemuir, Angus, Scotland, The United Kingdom"
+    },
+    {
+      "name": "E.E. Cummings",
+      "biography": "Edward Estlin Cummings was born in Cambridge, Mass",
+      "birthdate": "October 14, 1894",
+      "location": "in Cambridge, Massachusetts, The United States"
+    },
+    {
+      "name": "Khaled Hosseini",
+      "biography": "Hosseini was born in Kabul, Afghanistan, in 1965. ",
+      "birthdate": "March 04, 1965",
+      "location": "in Kabul, Afghanistan"
+    },
+    {
+      "name": "Harper Lee",
+      "biography": "Harper Lee, known as Nelle, was born in the Alabam",
+      "birthdate": "April 28, 1926",
+      "location": "in Monroeville, Alabama, The United States"
+    },
+    {
+      "name": "Madeleine L'Engle",
+      "biography": "Madeleine L'Engle was an American writer best know",
+      "birthdate": "November 29, 1918",
+      "location": "in New York City, New York, The United States"
+    }
+  ]
+}

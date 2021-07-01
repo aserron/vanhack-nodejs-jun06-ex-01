@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "author": "Thomas A. Edison",
+      "text": "“I have not failed. I've just found 10,000 ways th",
+      "tags": [
+        "edison",
+        "failure",
+        "inspirational",
+        "paraphrased"
+      ]
+    },
+    {
+      "author": "Mother Teresa",
+      "text": "“Not all of us can do great things. But we can do ",
+      "tags": [
+        "misattributed-to-mother-teresa",
+        "paraphrased"
+      ]
+    }
+  ]
+}

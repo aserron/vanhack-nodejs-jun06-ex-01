@@ -1,0 +1,74 @@
+openapi: 3.0.3
+servers:
+  - url: 'http://127.0.0.1:3000'
+
+info:
+  title: Quotes
+  description: Scrapped Quotes
+  version: 1.0.0
+paths:
+  /:
+    get:
+      description: simple hello world
+      operationId: apiHelloWorld
+      responses:
+        "200":
+          description: basic ok responses
+          content:
+            application/json:
+              schema:
+                success:
+                  type: string
+
+  /quotes:
+    get:
+      description: all available quotes
+      operationId: getQuotes
+
+      parameters:
+        - description: "all quotes by a particular author, ex:/quotes?author=:author"
+          in: query
+          name: author
+          required: false
+          schema:
+            type: string
+
+        - description: "all quotes with a specific tag, ex:  /quotes?tag=:tag  "
+          in: query
+          name: tag
+          required: false
+          schema:
+            type: string
+
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Quote"
+
+
+
+components:
+  schemas:
+    Quote:
+      description: The Quote structure data.
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              author:
+                description: The Quote author's name.
+                type: string
+
+              text:
+                description: The actual text of the quote
+                type: string
+              tags:
+                description: Array of associated tags
+                type: array
+                items:
+                  type: string

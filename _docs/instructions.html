@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+
+<body class="assessments challenges advanced-code-challenge">
+<div class="assessments app-content">
+
+    <div class="app-content">
+        <div class="app-content-body">
+
+            <div class="advanced-code-challenge-wrapper dark-bg ready">
+
+                <multi-file-layout>
+                    <ui-layout class="dark-bg">
+                        <div class="tab-content">
+
+                            <div class="app-content-body" ui-view>
+
+
+                                <div class="markdown collapsed"
+                                     language="fileTab.file.language"
+                                     markdown="fileTab.file.contents || fileTab.file.markdown"><h1>Quote Service</h1>
+                                    <h2>Overview</h2>
+                                    <p>It's time to write an API that serves an assortment of quotes from famous people!
+                                        The
+                                        quotes
+                                        will
+                                        be
+                                        scraped from a mock website, <a href="http://quotes.toscrape.com"
+                                                                        rel="noopener"
+                                                                        target="_blank">http://quotes.toscrape.com</a>.
+                                    </p>
+                                    <p>Your API will scrape all of the quotes from the above website and serve them via
+                                        the
+                                        following
+                                        route:</p>
+                                    <pre>HTTP method | Query                  | Response data
+------------+------------------------+----------------------------------
+GET         | /quotes                | all available quotes
+GET         | /quotes?author=:author | all quotes by a particular author
+GET         | /quotes?tag=:tag       | all quotes with a specific tag
+</pre>
+
+                                    <p>Provide an additional route to handle requests for author information, also
+                                        extracted in
+                                        full
+                                        from
+                                        the
+                                        quotes website:</p>
+                                    <pre>HTTP method | Query               | Response data
+------------+---------------------+-----------------------------------------
+GET         | /authors            | biographical information for all authors
+GET         | /authors?name=:name | biographical information for one author
+</pre>
+
+                                    <p>All parameter strings will be matched exactly--there is no need to lowercase or
+                                        otherwise
+                                        manipulate
+                                        these strings.</p>
+                                    <hr>
+                                    <h2>Response format</h2>
+                                    <p>All requests should respond with status code 200 on success. Responses will
+                                        consist of
+                                        the
+                                        following
+                                        JSON
+                                        structure:</p>
+                                    <div class="language-tabset">
+                                        <div class="language-tab language-javascript"><pre><code
+                                                class="lang-javascript">{
+  <span class="hljs-string">"data"</span>: [...]
+}
+</code></pre>
+                                        </div>
+                                    </div>
+                                    <p>In this structure, the actual response data (objects with properties described
+                                        below)
+                                        will be
+                                        contained
+                                        inside of the <code>data</code> array (which may be empty in the case of no
+                                        content).
+                                    </p>
+                                    <h3>Quotes response JSON</h3>
+                                    <p>For requests to one of the <code>/quote</code> routes, each member of the
+                                        <code>data</code>
+                                        array
+                                        should
+                                        be an object containing three properties: <code>text</code>, the string text of
+                                        the
+                                        quote;
+                                        <code>author</code>, the string author of the quote; and <code>tags</code>, an
+                                        array of
+                                        strings
+                                        representing all of the tags associated with the quote (if any tags exist).
+                                        Here's an
+                                        example
+                                        response
+                                        for a query to the <code>/quote</code> route
+                                        (<code>/quotes?tag=understanding</code>,
+                                        specifically)
+                                        containing one quote:</p>
+                                    <div class="language-tabset">
+                                        <div class="language-tab language-javascript"><pre><code
+                                                class="lang-javascript">{
+  <span class="hljs-string">"data"</span>: [
+    {
+      <span class="hljs-string">"author"</span>: <span class="hljs-string">"Albert Einstein"</span>,
+      <span class="hljs-string">"text"</span>: <span class="hljs-string">"“Any fool can know. The point is to understand.”"</span>,
+      <span class="hljs-string">"tags"</span>: [
+        <span class="hljs-string">"knowledge"</span>,
+        <span class="hljs-string">"learning"</span>,
+        <span class="hljs-string">"understanding"</span>,
+        <span class="hljs-string">"wisdom"</span>
+      ]
+    }
+  ]
+}
+</code></pre>
+                                        </div>
+                                    </div>
+                                    <h3>Authors response body JSON</h3>
+                                    <p>The other route group consists of author biographical information which can be
+                                        obtained
+                                        for
+                                        all
+                                        authors
+                                        via <code>/authors</code>, or for a specific author via <code>/authors?name=:name</code>.
+                                    </p>
+                                    <p>For requests to an <code>/authors</code> route, each member of the
+                                        <code>data</code>
+                                        array
+                                        should
+                                        be
+                                        an
+                                        object containing four properties: <code>name</code>, the string name of the
+                                        author;
+                                        <code>biography</code>, the biography of the author; <code>birthdate</code> the
+                                        birth
+                                        date
+                                        of
+                                        the
+                                        author; <code>location</code>, the birth location of the author.</p>
+                                    <p>Here's a potential response for a GET request to the route
+                                        <code>/authors?name=André%20Gide</code>:
+                                    </p>
+                                    <div class="language-tabset">
+                                        <div class="language-tab language-javascript"><pre><code
+                                                class="lang-javascript">{
+  <span class="hljs-string">"data"</span>: [
+    {
+      <span class="hljs-string">"name"</span>: <span class="hljs-string">"André Gide\n    "</span>,
+      <span class="hljs-string">"biography"</span>: <span class="hljs-string">"\n        André Paul Guillaume Gide was a French author and winner of the Nobel Prize in literature in 1947. Gide's career ranged from its beginnings in the symbolist movement, to the advent of anticolonialism between the two World Wars.Known for his fiction as well as his autobiographical works, Gide exposes to public view the conflict and eventual reconciliation between the two sides of his personality, split apart by a straight-laced education and a narrow social moralism. Gide's work can be seen as an investigation of freedom and empowerment in the face of moralistic and puritan constraints, and gravitates around his continuous effort to achieve intellectual honesty. His self-exploratory texts reflect his search of how to be fully oneself, even to the point of owning one's sexual nature, without at the same time betraying one's values. His political activity is informed by the same ethos, as suggested by his repudiation of communism after his 1936 voyage to the USSR.    \n    "</span>,
+      <span class="hljs-string">"birthdate"</span>: <span class="hljs-string">"November 22, 1869"</span>,
+      <span class="hljs-string">"location"</span>: <span class="hljs-string">"in Paris, France"</span>
+    }
+  ]
+}
+</code></pre>
+                                        </div>
+                                    </div>
+                                    <p>Based on the above response, it's clear that some bodies will be quite large,
+                                        which can
+                                        make
+                                        tracking
+                                        down bugs and viewing diffs tedious. Additionally, the response's whitespace
+                                        could use
+                                        trimming.
+                                        As
+                                        a
+                                        consequence, let's simplify responses for the purposes of this challenge. </p>
+                                    <p>Please call <code>.trim()</code> on every response field to remove leading and
+                                        trailing
+                                        whitespace.
+                                        Additionally, call <code>.slice(0, 50)</code> on the <code>biography</code> and
+                                        <code>text</code>
+                                        fields
+                                        (depending on whether we're returning an author biography or quote,
+                                        respectively) to
+                                        return
+                                        only
+                                        the
+                                        first 50 characters. Specifically, use <code>.trim().slice(0, 50)</code> in that
+                                        order
+                                        for
+                                        these
+                                        two
+                                        fields.</p>
+                                    <p>With this change, the above example response body becomes</p>
+                                    <div class="language-tabset">
+                                        <div class="language-tab language-javascript"><pre><code
+                                                class="lang-javascript">{
+  <span class="hljs-string">"data"</span>: [
+    {
+      <span class="hljs-string">"name"</span>: <span class="hljs-string">"André Gide"</span>,
+      <span class="hljs-string">"biography"</span>: <span class="hljs-string">"André Paul Guillaume Gide was a French author and "</span>,
+      <span class="hljs-string">"birthdate"</span>: <span class="hljs-string">"November 22, 1869"</span>,
+      <span class="hljs-string">"location"</span>: <span class="hljs-string">"in Paris, France"</span>
+    }
+  ]
+}
+</code></pre>
+                                        </div>
+                                    </div>
+                                    <p>which is a bit more manageable.</p>
+                                    <hr>
+                                    <h2>Scraping</h2>
+                                    <p>This section outlines guidelines for the data scraping component.</p>
+                                    <p>All data will be extracted from <a href="http://quotes.toscrape.com"
+                                                                          rel="noopener"
+                                                                          target="_blank">quotes.toscrape.com</a>.
+                                        Note that this site uses an unsecure <code>http</code> protocol rather than
+                                        <code>https</code>.
+                                        There
+                                        should be 100 quotes and 50 author biographies, all of which should be made
+                                        available by
+                                        your
+                                        API. A
+                                        requests library, <a href="https://github.com/axios/" rel="noopener"
+                                                             target="_blank">axios</a>,
+                                        is
+                                        available for retrieving the HTML content.</p>
+                                    <p>HTML parsing modules which are available in your environment include:</p>
+                                    <ul>
+                                        <li><a href="https://cheerio.js.org/" rel="noopener" target="_blank">cheerio</a>
+                                        </li>
+                                        <li><a href="https://github.com/jsdom/jsdom" rel="noopener" target="_blank">jsdom</a>
+                                        </li>
+                                    </ul>
+                                    <p>This challenge does not presuppose familiarity with these libraries. Feel free to
+                                        research
+                                        and
+                                        consult
+                                        documentation or use any other libraries that are available in the
+                                        environment.</p>
+                                    <hr>
+                                    <h2>Testing with chai-http</h2>
+                                    <p>Here are a few examples to disambiguate the above requirements and offer some
+                                        concrete
+                                        goals. </p>
+                                    <p>The chai-http module will be used for testing. chai will import and run your app
+                                        directly
+                                        from
+                                        its
+                                        <code>module.exports</code>
+                                        property, making calls to routes and evaluating the responses.</p>
+                                    <h3>Example 1</h3>
+                                    <div class="language-tabset">
+                                        <div class="language-tab language-javascript"><pre><code
+                                                class="lang-javascript"><span
+                                                class="hljs-comment">// send a GET request to /quotes?tag=obvious</span>
+<span class="hljs-keyword">const</span> req = <span class="hljs-string">"/quotes"</span>;
+<span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> chai.request(app)
+                      .get(req)
+                      .query({tag: <span class="hljs-string">"obvious"</span>});
+<span class="hljs-keyword">const</span> expected = {
+  <span class="hljs-string">"data"</span>: [
+    {
+      author: <span class="hljs-string">'Steve Martin'</span>,
+      text: <span class="hljs-string">'“A day without sunshine is like, you know, night.”'</span>
+      keywords: [<span class="hljs-string">'humor'</span>, <span class="hljs-string">'obvious'</span>, <span
+                                                    class="hljs-string">'simile'</span>]
+    }
+  ]
+};
+
+expect(res.status).to.equal(<span class="hljs-number">200</span>);
+expect(res).to.be.json;
+expect(res.body.data).to.be.a(<span class="hljs-string">"array"</span>);
+expect(res.body.data.length).to.equal(expected.data.length);
+expect(validateResponse(res.body.data, expected.data)).to.be.true;
+</code></pre>
+                                        </div>
+                                    </div>
+                                    <p>In this example, a GET request is made to the <code>/quotes?tag=obvious</code>
+                                        route,
+                                        which
+                                        responds
+                                        with
+                                        all quotes which contain the keyword <code>"obvious"</code>. The response
+                                        contains the
+                                        HTTP
+                                        status
+                                        code
+                                        200/success, matches the correct JSON structure and has a <code>.data</code>
+                                        property
+                                        with
+                                        length 1.
+                                    </p>
+                                    <p>Lastly, <code>validateResponse</code> is invoked to verify that the response
+                                        array
+                                        matches
+                                        <code>expected</code> satisfactorily. Primarily, order is ignored. Check
+                                        <code>/test/helpers/validate.js</code> to see how this works.</p>
+                                    <h3>Example 2</h3>
+                                    <p>Here's an example of a 200 response for a query to <code>/quotes?tag=foo</code>,
+                                        which
+                                        still
+                                        returns
+                                        JSON
+                                        albeit with an empty <code>data</code> array:</p>
+                                    <div class="language-tabset">
+                                        <div class="language-tab language-javascript"><pre><code
+                                                class="lang-javascript"><span
+                                                class="hljs-keyword">const</span> req = <span
+                                                class="hljs-string">"/quotes"</span>;
+<span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> chai.request(app)
+                      .get(req)
+                      .query({tag: <span class="hljs-string">"foo"</span>});
+expect(res).to.have.status(<span class="hljs-number">200</span>);
+expect(res).to.be.json;
+expect(res.body).to.be.a(<span class="hljs-string">"object"</span>);
+expect(res.body.data).to.be.a(<span class="hljs-string">"array"</span>);
+expect(res.body.data.length).to.equal(<span class="hljs-number">0</span>);
+</code></pre>
+                                        </div>
+                                    </div>
+                                    <h3>Example 3</h3>
+                                    <p>Here's a request to <code>/authors?name=C.S.%20Lewis</code> which retrieves
+                                        biographical
+                                        information
+                                        for
+                                        C.S. Lewis.</p>
+                                    <div class="language-tabset">
+                                        <div class="language-tab language-javascript"><pre><code
+                                                class="lang-javascript"><span
+                                                class="hljs-keyword">const</span> req = <span
+                                                class="hljs-string">"/authors"</span>;
+<span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> chai.request(app).get(req).query({name: <span
+                                                    class="hljs-string">"C.S. Lewis"</span>});
+<span class="hljs-keyword">const</span> expected = {
+  data: [
+    {
+       name: <span class="hljs-string">'C.S. Lewis'</span>,
+       biography: <span class="hljs-string">'CLIVE STAPLES LEWIS (1898–1963) was one of the int'</span>,
+       birthdate: <span class="hljs-string">'November 29, 1898'</span>,
+       location: <span class="hljs-string">'in Belfast, Ireland'</span>
+    }
+  ]
+};
+
+expect(res.status).to.equal(<span class="hljs-number">200</span>);
+expect(res).to.be.json;
+expect(res.body.data).to.be.a(<span class="hljs-string">"array"</span>);
+expect(res.body.data.length).to.equal(expected.data.length);
+expect(validateResponse(res.body.data, expected.data)).to.be.true;
+</code></pre>
+                                        </div>
+                                    </div>
+                                    <p>For additional examples, see the provided test cases. You'll likely need to write
+                                        your
+                                        own
+                                        tests;
+                                        a
+                                        modifiable example file which will not be included with your final submission is
+                                        located
+                                        in
+                                        <code>test/candidate.test.js</code>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </ui-layout>
+                </multi-file-layout>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

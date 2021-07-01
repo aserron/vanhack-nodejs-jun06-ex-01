@@ -1,0 +1,35 @@
+openapi: 3.0.3
+info:
+  title: Quotes
+  description:
+  version: 1.0.0
+servers:
+  - url: 'http://quotes.toscrape.com/'
+
+paths:
+#
+#  HTTP method | Query                  | Response data
+#  ------------+------------------------+----------------------------------
+#  GET         | /quotes                | all available quotes
+#  GET         | /quotes?author=:author | all quotes by a particular author
+#  GET         | /quotes?tag=:tag       | all quotes with a specific tag
+  /quotes:
+    get:
+      operationId: getAllQuotes
+      responses:
+        "200":
+          content:
+            plain/text:
+              schema:
+                type: string
+          description: CRXDE is enabled
+        "404":
+          content:
+            plain/text:
+              schema:
+                type: string
+          description: CRXDE is disabled
+      tags:
+        - crx
+
+  

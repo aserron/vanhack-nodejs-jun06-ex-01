@@ -1,0 +1,212 @@
+
+multi-file-layout > ui-layout {
+    background-image: linear-gradient(90deg, #eeeeee 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, #e9e9e9 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(235, 235, 235, 0.1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(235, 235, 235, 0.25) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 101px 100px, 73px 100px, 43px 100px, 17px 100px;
+    background-color: #ebebeb;
+    box-shadow: inset 0 2px 20px #dcdcdc;
+}
+
+multi-file-layout > ui-layout.dark-bg .info .markdown {
+    color: #dedede;
+    background-color: #353536;
+    scrollbar-color: #8E8E8E #353536;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown ::-webkit-scrollbar {
+    background-color: #353536;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown ::-webkit-scrollbar-thumb {
+    background-color: #8E8E8E;
+    border-radius: 1ex;
+    border: 3px solid #353536;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown ::-webkit-scrollbar-corner {
+    background: #353536;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown h1,
+multi-file-layout > ui-layout.dark-bg .info .markdown h2,
+multi-file-layout > ui-layout.dark-bg .info .markdown h3,
+multi-file-layout > ui-layout.dark-bg .info .markdown h4,
+multi-file-layout > ui-layout.dark-bg .info .markdown h5,
+multi-file-layout > ui-layout.dark-bg .info .markdown h6,
+multi-file-layout > ui-layout.dark-bg .info .markdown label {
+    color: #dedede;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown pre:not(.CodeMirror-line),
+multi-file-layout > ui-layout.dark-bg .info .markdown code,
+multi-file-layout > ui-layout.dark-bg .info .markdown kbd {
+    color: #dedede;
+    background-color: #424243;
+    border-color: #262626;
+}
+
+multi-file-layout > ui-layout.dark-bg .info .markdown *::-moz-selection {
+    color: inherit;
+    background: #3d4840;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown *::selection {
+    color: inherit;
+    background: #3d4840;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown table > tbody > tr > td {
+    border-top-color: #262626;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown table > thead > tr > th {
+    border-bottom-color: #262626;
+}
+
+multi-file-layout > ui-layout.dark-bg .info .markdown .block.block--docs h3 {
+    border-color: #414141;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown .block.block--docs h3 code {
+    background-color: transparent;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown .block.block--docs.table-doc th {
+    border-bottom-color: #000;
+}
+multi-file-layout > ui-layout.dark-bg .info .markdown .block.block--docs.table-doc thead {
+    background-color: #29292a;
+}
+multi-file-layout > ui-layout.dark-bg .info markdown-editor .markdown {
+    background-color: transparent;
+}
+
+multi-file-layout > ui-layout .runner-output .banner div {
+    margin-left: 40px;
+}
+multi-file-layout > ui-layout .runner-output .banner a {
+    cursor: pointer;
+}
+multi-file-layout > ui-layout .runner-output runner-frame {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+multi-file-layout > ui-layout .code-tabs .nav-tabs > li.code-tab.active > a,
+multi-file-layout > ui-layout .code-tabs .markdown-editor.fullscreen .tabs > li.code-tab.active > a {
+    background-color: #FFF;
+}
+multi-file-layout > ui-layout.dark-bg .code-tabs .nav-tabs > li.code-tab.active > a,
+multi-file-layout > ui-layout.dark-bg .code-tabs .markdown-editor.fullscreen .tabs > li.code-tab.active > a {
+    background-color: #222 !important;
+}
+multi-file-layout > ui-layout.dark-bg .code-tabs .nav-tabs > li.code-tab.runner-frame.active > a,
+multi-file-layout > ui-layout.dark-bg .code-tabs .markdown-editor.fullscreen .tabs > li.code-tab.runner-frame.active > a {
+    background-color: #131414 !important;
+}
+
+multi-file-layout > ui-layout .code-tabs .tab-scroller score-label {
+    position: relative;
+    margin-left: 4px;
+    margin-top: -2px;
+}
+multi-file-layout > ui-layout .code-tabs .tab-scroller li:not(.active) score-label {
+    opacity: 0.6;
+}
+
+multi-file-layout > ui-layout.dark-bg {
+    background-image: linear-gradient(90deg, #272727 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, #242424 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(38, 38, 38, 0.1) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(38, 38, 38, 0.25) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 101px 100px, 73px 100px, 43px 100px, 17px 100px;
+    background-color: #262626;
+    box-shadow: inset 0 2px 20px #191919;
+}
+
+multi-file-layout .no-files > div {
+    position: relative;
+    border-left: 4px solid rgba(128, 136, 140, 0.5);
+    padding: 8px 0 8px 10px;
+    margin-left: 70px;
+    pointer-events: none;
+}
+
+multi-file-layout .no-files > div > *:last-child {
+    margin-bottom: 0;
+}
+multi-file-layout .no-files > div > p {
+    transition: all 0.15s ease-in-out;
+}
+
+multi-file-layout .no-files.drag-over > div > p {
+    opacity: 0;
+}
+
+multi-file-layout .nav-tabs > li.multi-file-layout-tab > a,
+multi-file-layout .markdown-editor.fullscreen .tabs > li.multi-file-layout-tab > a {
+    position: relative;
+    height: 42px;
+    padding: 0;
+}
+multi-file-layout .nav-tabs > li.multi-file-layout-tab > a tab-heading,
+multi-file-layout .markdown-editor.fullscreen .tabs > li.multi-file-layout-tab > a tab-heading {
+    display: block;
+    height: 42px;
+}
+
+multi-file-layout .nav-tabs > li.multi-file-layout-tab > a:after,
+multi-file-layout .markdown-editor.fullscreen .tabs > li.multi-file-layout-tab > a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #4BB05D;
+    border-radius: 3px 3px 0 0;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+multi-file-layout .nav-tabs > li.multi-file-layout-tab.focused-tab > a:after,
+multi-file-layout .markdown-editor.fullscreen .tabs > li.multi-file-layout-tab.focused-tab > a:after {
+    opacity: 1;
+}
+multi-file-layout [multi-file-draggable-tab] {
+    padding: 10px 15px;
+    user-select: none;
+    display: inline-flex;
+    height: 40px;
+    overflow: hidden;
+    align-items: center;
+}
+multi-file-layout [multi-file-draggable-tab] > * {
+    flex: 0 1 auto;
+}
+
+multi-file-layout .single-tab-mode .nav-tabs > li.multi-file-layout-file > a,
+multi-file-layout .single-tab-mode .markdown-editor.fullscreen .tabs > li.multi-file-layout-file > a {
+    cursor: default;
+    pointer-events: none;
+}
+multi-file-layout .single-tab-mode .nav-tabs > li.multi-file-layout-file > a:after,
+multi-file-layout .single-tab-mode .markdown-editor.fullscreen .tabs > li.multi-file-layout-file > a:after {
+    display: none;
+}
+
+multi-file-layout .file-tab-contents .multi-file-layout-code-toolbar > * {
+    display: flex;
+    flex: 0 1 auto;
+}
+
+multi-file-layout .file-tab-contents .multi-file-layout-code-toolbar > * .qualified-checkbox label,
+multi-file-layout .file-tab-contents .multi-file-layout-code-toolbar > * .qualified-radio label {
+    margin-bottom: 0;
+}
+
+multi-file-layout .file-tab-contents codemirror-ide-opts {
+    padding: 16px;
+}
+multi-file-layout .drag-and-drop-placeholder tab-heading [multi-file-draggable-tab] {
+    opacity: 0.6;
+    border: 1px dashed #80888c;
+    padding: 5px 14px;
+    height: 34px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    filter: grayscale(1);
+}
+
+multi-file-layout .dragging-tab tabset {
+    pointer-events: none;
+}
+multi-file-layout .dragging-tab iframe {
+    display: none;
+}

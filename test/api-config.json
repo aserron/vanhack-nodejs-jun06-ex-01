@@ -1,0 +1,16 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Quote Service",
+    "description": "It's time to write an API that serves an assortment of quotes from famous people! The quotes will be scraped from a mock website, http://quotes.toscrape.com.\n\n",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://quotes.toscrape.com/"
+    }
+  ],
+  "paths": {
+
+  }
+}
