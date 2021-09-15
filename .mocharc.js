@@ -8,7 +8,7 @@ module.exports = {
     'allow-uncaught': true,
     'async-only'    : false,
     bail            : false,
-    'check-leaks'   : false,
+    'check-leaks'   : true,
     color           : true,
     delay           : false,
     diff            : true,

@@ -13,16 +13,12 @@ router.use(async function (req, res, next) {
         scache.set('authors', data)
     }
     
-    console.log(
-        'Request URL:', req.originalUrl,
-        ` created=${req.app.created.getTime()}`)
+    // console.log(
+    //     'Request URL:', req.originalUrl,
+    //     ` created=${req.app.created.getTime()}`)
     // console.log(scache)
-    next()
+    next();
     
-}, function (req, res, next) {
-    console.log('Request Type:', req.method)
-    console.log()
-    next()
 })
 
 /* GET users listing. */
@@ -49,6 +45,8 @@ router.get('/', async function (req, res, next) {
             results = (name !== undefined) ?
                 await scrap.getAuthor(name) :
                 await scrap.getAllAuthor()
+    
+            next();
         
         } catch (e) {
             console.log("[Error]", e)
@@ -67,11 +65,11 @@ router.get('/alt', async function (req, res, next) {
     
     const {name} = req.query;
     
-    let results
+    let results;
+    let scache  = scrap.instance.cache();
+    let authors = scache.get('authors')
     
-    
-    let scache = scrap.instance.cache();
-    let quotes = scache.get('quotes')
+    const {tag} = req.query;
     
     if (authors) {
         
